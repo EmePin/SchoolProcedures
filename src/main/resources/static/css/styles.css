@@ -1,0 +1,52 @@
+/* Custom styles */
+.btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-700;
+}
+
+.btn-secondary {
+    @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.form-input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-700;
+}
+
+.card {
+    @apply bg-white shadow rounded-lg p-6;
+}
+
+.status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-pending {
+    @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-approved {
+    @apply bg-green-100 text-green-800;
+}
+
+.status-rejected {
+    @apply bg-red-100 text-red-800;
+}
+
+.status-processing {
+    @apply bg-blue-100 text-blue-800;
+}
+
+.status-ready {
+    @apply bg-indigo-100 text-indigo-800;
+}
+
+.status-delivered {
+    @apply bg-gray-100 text-gray-800;
+}

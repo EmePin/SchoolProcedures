@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID System - <th:block th:include=":: #pageTitle">Page Title</th:block></title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styles -->
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    
+    <!-- Additional styles for specific pages -->
+    <th:block th:include=":: #additionalStyles"></th:block>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm" th:fragment="navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" class="text-xl font-bold text-gray-800">Campus ID</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-center" sec:authorize="isAuthenticated()">
+                    <div class="ml-3 relative">
+                        <div>
+                            <button type="button" class="flex items-center max-w-xs rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="user-menu-button">
+                                <span class="sr-only">Open user menu</span>
+                                <div class="h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center">
+                                    <span class="text-indigo-800" th:text="${#strings.substring(#authentication.name,0,1).toUpperCase()}">U</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="flex-1 flex" sec:authorize="isAuthenticated()">
+        <div class="hidden md:flex md:flex-shrink-0">
+            <div class="flex flex-col w-64">
+                <div class="flex flex-col h-0 flex-1 bg-white border-r border-gray-200">
+                    <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+                        <div class="flex items-center flex-shrink-0 px-4">
+                            <span class="text-lg font-semibold text-gray-800">Menu</span>
+                        </div>
+                        <nav class="mt-5 flex-1 px-2 space-y-1">
+                            <a th:href="@{/dashboard}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md" th:classappend="${#httpServletRequest.requestURI == '/dashboard' ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}">
+                                Dashboard
+                            </a>
+                            <a th:href="@{/request-id}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md" th:classappend="${#httpServletRequest.requestURI == '/request-id' ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}">
+                                Request ID Card
+                            </a>
+                            <a th:href="@{/track-request}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md" th:classappend="${#httpServletRequest.requestURI == '/track-request' ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}">
+                                Track Request
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex-1">
+            <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none">
+                <div class="py-6">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                        <div th:replace=":: #content">
+                            <!-- Page content will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script th:src="@{/js/main.js}"></script>
+    <th:block th:include=":: #additionalScripts"></th:block>
+</body>
+</html>
