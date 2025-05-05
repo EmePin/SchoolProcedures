@@ -17,7 +17,7 @@
   <h3 align="center">SchoolProcedures-README</h3>
 
   <p align="center">
-Plataforma web para gestionar el trámite digital de credenciales escolares, rápida y sin filas.
+Plataforma web para gestionar el trámite digital de credenciales escolares de manera eficiente y sin filas.
     <br />
     <a href="https://github.com/EmePin/SchoolProcedures"><strong>Explore the docs »</strong></a>
     <br />
@@ -61,13 +61,16 @@ Plataforma web para gestionar el trámite digital de credenciales escolares, rá
 
 Este proyecto es una plataforma web que facilita el proceso de trámite  y emisión de credenciales estudiantiles. Permite a los estudiantes realizar solicitudes en línea, subir documentos requeridos y dar seguimiento a su trámite, mientras que los administradores pueden gestionar y aprobar las solicitudes de forma eficiente.
 
-<a href="https://github.com/EmePin/SchoolProcedures">
-<img src="img/readme/screenshot.png" alt="screenshot" >
-</a>
+Se puede acceder al demo de la plataforma desde https://school-procedures.vercel.app utilizando las siguientes cuentas demo:
 
-<a href="https://school-procedures.vercel.app/">Ver demo del sitio web</a>
+Estudiante: student@example.com | password
 
-<a href="https://github.com/EmePin/SchoolProcedures/archive/refs/heads/main.zip">Descargar código fuente</a>
+Administrador: admin@example.com | password
+
+
+![GlobeConvert](https://github.com/user-attachments/assets/c5fd454f-d0ad-48de-bf08-3fd7c21c280a)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
@@ -133,15 +136,6 @@ npm run dev
 
 Esta plataforma digital facilita el trámite para obtener la credencial escolar de forma rápida, sin filas ni papeleos. Los estudiantes registran su solicitud en línea, adjuntan los documentos requeridos y pueden consultar el estado de su trámite. Un administrador gestiona las solicitudes desde un panel intuitivo, lo que hace que el proceso sea eficiente, organizado y completamente digital.
 
-Puede acceder a la plataforma desde https://school-procedures.vercel.app utilizando las siguientes cuentas de demostración:
-
-Cuentas demo:
-
-Estudiante: student@example.com | password
-
-Administrador: admin@example.com | password
-
-Estas cuentas permiten explorar las funcionalidades disponibles para cada tipo de usuario.
 
 
 <br>
@@ -150,27 +144,15 @@ Estas cuentas permiten explorar las funcionalidades disponibles para cada tipo d
 <br>
 <br>
 
- <a href="https://github.com/EmePin/SchoolProcedures">
-    <img src="img/readme/screenshot.png" alt="screenshot" >
-  </a>
-<a href="https://github.com/EmePin/SchoolProcedures">
-    <img src="img/readme/agregar.png" alt="screenshot">
-  </a>
-  <a href="https://github.com/EmePin/SchoolProcedures">
-    <img src="img/readme/categorias.png" alt="screenshot">
-  </a>
-  <a href="https://github.com/EmePin/SchoolProcedures">
-    <img src="img/readme/carrito.png" alt="screenshot">
-  </a>
-  <a href="https://github.com/EmePin/SchoolProcedures">
-    <img src="img/readme/comprar.png" alt="screenshot">
-  </a>
-  <a href="https://github.com/EmePin/SchoolProcedures">
-    <img src="img/readme/pago.png" alt="screenshot">
-  </a>
-  <a href="https://github.com/EmePin/SchoolProcedures">
-    <img src="img/readme/compra_realizada.png" alt="screenshot">
-  </a>
+![image](https://github.com/user-attachments/assets/345f35d6-3ff8-4c34-8747-21c50bfabf6f)
+![image](https://github.com/user-attachments/assets/bec12fd7-5b2e-44ee-b47e-d7a7cdd3cb83)
+![image](https://github.com/user-attachments/assets/d0132de3-5df8-4dc5-9d0b-fb043d697d88)
+![image](https://github.com/user-attachments/assets/6ac5ec24-2ace-41f6-9d10-fa1dbb8a2c74)
+![image](https://github.com/user-attachments/assets/a9deeb4c-94ac-4f6c-93f2-f657881991d7)
+![image](https://github.com/user-attachments/assets/c5ab26bf-47eb-45d9-bb5a-af1c5d642820)
+![image](https://github.com/user-attachments/assets/39e486c1-bfe5-4ddb-8d9d-6bbb216670b9)
+![image](https://github.com/user-attachments/assets/1748801c-3489-419f-aaed-913f898015f8)
+
   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -219,7 +201,6 @@ Distributed under the MIT License. See [LICENSE](https://github.com/EmePin/Schoo
 -   **Linkedin** : [Aimée Pineda Nivón](https://linkedin.com/in/aimeepinedanivon)
 -   **Github** : [EmePin](https://github.com/EmePin/)
 -   **Email** : aimeepinedanivon@gmail.com
--   **Project Link** : [SchoolProcedures](https://github.com/EmePin/SchoolProcedures)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
